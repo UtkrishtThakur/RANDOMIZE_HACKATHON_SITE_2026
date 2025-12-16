@@ -1,9 +1,11 @@
 "use client";
 import Navbar from "../components/Navbar";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 // --- PLACEHOLDER DATA ---
 // You can edit this array to update the leaderboard.
+/*
 const leaderboardData = [
     { rank: 1, team: "NullPointers", problemStatement: "AI for Social Good", projectLink: "https://github.com/example/project", badges: ["🏆", "🔥"] },
     { rank: 2, team: "LazyLoaders", problemStatement: "Decentralized Identity", projectLink: "https://github.com/example/project", badges: ["🥈"] },
@@ -21,29 +23,72 @@ const leaderboardData = [
     { rank: 14, team: "HTMLHackers", problemStatement: "Peer-to-Peer Energy", projectLink: "https://github.com/example/project", badges: [] },
     { rank: 15, team: "CSSConquerors", problemStatement: "Virtual Classroom", projectLink: "https://github.com/example/project", badges: [] },
 ];
+*/
 
 export default function Leaderboard() {
     return (
-        <div className="min-h-screen bg-black text-white font-sans selection:bg-purple-500/30 overflow-x-hidden">
-            <Navbar />
+        <div className="min-h-screen bg-black text-white font-sans selection:bg-purple-500/30 overflow-x-hidden relative">
+            {/* Fixed Background Logo */}
+            <div className="fixed inset-0 flex items-center justify-center pointer-events-none z-0 overflow-hidden">
+                <div className="relative w-[500px] h-[500px] md:w-[800px] md:h-[800px] opacity-20 blur-xl">
+                    <Image
+                        src="/logo.png"
+                        alt="Background Logo"
+                        fill
+                        className="object-contain"
+                        priority
+                    />
+                </div>
+            </div>
 
-            <main className="pt-24 pb-20 px-6 max-w-7xl mx-auto">
-                {/* Page Header */}
-                <motion.div
-                    initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.8 }}
-                    className="mb-12 text-center"
-                >
-                    <h1 className="text-4xl md:text-6xl font-bold tracking-tighter mb-4 bg-gradient-to-b from-white to-white/40 bg-clip-text text-transparent">
-                        Leaderboard
-                    </h1>
-                    <p className="text-lg text-zinc-400">
-                        Top performers battling for glory.
-                    </p>
-                </motion.div>
+            <div className="relative z-10">
+                <Navbar />
 
-                {/* Leaderboard Table Container */}
+                <main className="pt-24 pb-20 px-6 max-w-7xl mx-auto">
+                    {/* Page Header */}
+                    <motion.div
+                        initial={{ opacity: 0, y: -20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8 }}
+                        className="mb-12 text-center"
+                    >
+                        <h1 className="text-4xl md:text-6xl font-bold tracking-tighter mb-4 bg-gradient-to-b from-white to-white/40 bg-clip-text text-transparent">
+                            Leaderboard
+                        </h1>
+                        <p className="text-lg text-zinc-400">
+                            Top performers battling for glory.
+                        </p>
+                    </motion.div>
+
+                    {/* Coming Soon / Locked UI */}
+                    <div className="flex flex-col items-center justify-center min-h-[60vh] relative z-20">
+                        <div className="p-10 rounded-3xl bg-black/40 backdrop-blur-md border border-white/10 text-center relative overflow-hidden group">
+
+                            {/* Scanning Line Animation */}
+                            <div className="absolute top-0 left-0 w-full h-1 bg-purple-500/50 shadow-[0_0_15px_rgba(168,85,247,0.8)] animate-[scan_3s_ease-in-out_infinite]" />
+
+                            <div className="mb-6 relative inline-block">
+                                <span className="text-6xl">🔒</span>
+                                <div className="absolute inset-0 bg-purple-500/20 blur-xl animate-pulse"></div>
+                            </div>
+
+                            <h2 className="text-4xl md:text-5xl font-bold font-[family-name:var(--font-orbitron)] tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 mb-4 animate-[pulse_4s_ease-in-out_infinite]">
+                                SYSTEM LOCKED
+                            </h2>
+
+                            <div className="h-px w-32 mx-auto bg-gradient-to-r from-transparent via-white/20 to-transparent mb-6"></div>
+
+                            <p className="text-lg text-zinc-400 font-mono tracking-wider">
+                                CALCULATING RESULTS...
+                            </p>
+                            <p className="text-sm text-zinc-600 mt-2 font-mono">
+                                LEADERBOARD_STATUS: <span className="text-red-400">OFFLINE</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Leaderboard Table Container */}
+                    {/*
                 <motion.div
                     initial={{ opacity: 0, scale: 0.95 }}
                     animate={{ opacity: 1, scale: 1 }}
@@ -81,7 +126,7 @@ export default function Leaderboard() {
                       `}>
                                                 {team.rank}
                                             </div>
-                                            {/* Golden Glow for Rank 1 */}
+                                            {/* Golden Glow for Rank 1 *\}
                                             {team.rank === 1 && (
                                                 <div className="absolute left-0 top-0 w-2 h-full bg-yellow-500/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity" />
                                             )}
@@ -119,7 +164,9 @@ export default function Leaderboard() {
                         </table>
                     </div>
                 </motion.div>
-            </main>
+                */}
+                </main>
+            </div>
         </div>
     );
 }

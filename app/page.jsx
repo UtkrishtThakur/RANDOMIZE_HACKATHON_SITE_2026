@@ -1,7 +1,8 @@
 "use client";
 import Navbar from "./components/Navbar";
-import { motion } from "framer-motion";
-
+import { m } from "framer-motion";
+import Link from "next/link";
+import Image from "next/image";
 // Animation Variants
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -27,8 +28,28 @@ export default function Home() {
         {/* Hero Section */}
         <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
 
+          {/* Concentric Waves Background */}
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
+            <div
+              className="absolute inset-0 opacity-30"
+              style={{
+                background: 'repeating-radial-gradient(circle at center, rgba(168, 85, 247, 0.15) 0px, transparent 100px, rgba(168, 85, 247, 0.05) 200px)'
+              }}
+            />
+            {/* Faded Background Logo */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] md:w-[800px] md:h-[800px] opacity-20 blur-sm mix-blend-screen pointer-events-none">
+              <Image
+                src="/logo.png"
+                alt="Background Logo"
+                fill
+                className="object-contain"
+                priority
+              />
+            </div>
+          </div>
+
           {/* Animated Background Gradients */}
-          <motion.div
+          <m.div
             animate={{
               scale: [1, 1.2, 1],
               opacity: [0.3, 0.5, 0.3],
@@ -36,7 +57,7 @@ export default function Home() {
             transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
             className="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-purple-600/20 rounded-full blur-[120px] -z-10"
           />
-          <motion.div
+          <m.div
             animate={{
               scale: [1, 1.3, 1],
               opacity: [0.2, 0.4, 0.2],
@@ -46,42 +67,46 @@ export default function Home() {
           />
 
           <div className="container px-6 mx-auto text-center z-10">
-            <motion.div
+            <m.div
               initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
+              animate="visible"
               variants={staggerContainer}
             >
-              <motion.div variants={fadeInUp} className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm mb-8 hover:bg-white/10 transition-colors cursor-default">
+              <m.div variants={fadeInUp} className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 backdrop-blur-sm mb-8 hover:bg-white/10 transition-colors cursor-default">
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
                 </span>
-                <span className="text-xs font-medium text-zinc-300 tracking-wide uppercase">Applications Open</span>
-              </motion.div>
+                <span className="text-xs font-medium text-zinc-300 tracking-wide uppercase">Connected</span>
+              </m.div>
 
-              <motion.h1 variants={fadeInUp} className="text-6xl md:text-9xl font-bold tracking-tighter mb-6 bg-gradient-to-b from-white via-white to-zinc-500 bg-clip-text text-transparent pb-2">
+
+              <m.h1 variants={fadeInUp} className="text-6xl md:text-9xl font-bold tracking-tighter mb-6 bg-gradient-to-b from-white via-white to-zinc-500 bg-clip-text text-transparent pb-2 relative z-10 drop-shadow-[0_20px_50px_rgba(168,85,247,0.5)]">
                 BUILD THE <br /> IMPOSSIBLE.
-              </motion.h1>
+              </m.h1>
 
-              <motion.p variants={fadeInUp} className="max-w-2xl mx-auto text-lg md:text-xl text-zinc-400 mb-10 leading-relaxed">
+              <m.p variants={fadeInUp} className="max-w-2xl mx-auto text-lg md:text-xl text-zinc-400 mb-10 leading-relaxed">
                 Join 500+ developers, designers, and innovators for 48 hours of pure creation.
                 The ultimate hackathon experience coming to your city.
-              </motion.p>
+              </m.p>
 
-              <motion.div variants={fadeInUp} className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <button className="h-12 px-8 rounded-full bg-white text-black font-semibold hover:bg-zinc-200 transition-all hover:scale-105 active:scale-95">
-                  Apply with Devfolio
-                </button>
-                <button className="h-12 px-8 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 backdrop-blur-sm transition-all text-white font-medium hover:scale-105 active:scale-95">
-                  View Discord
-                </button>
-              </motion.div>
-            </motion.div>
+              <m.div variants={fadeInUp} className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <Link href="/problem-statement">
+                  <button className="h-12 px-8 rounded-full bg-white text-black font-semibold hover:bg-zinc-200 transition-all hover:scale-105 active:scale-95">
+                    Problem Statements
+                  </button>
+                </Link>
+                <Link href="/submission">
+                  <button className="h-12 px-8 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 backdrop-blur-sm transition-all text-white font-medium hover:scale-105 active:scale-95">
+                    Submission Page
+                  </button>
+                </Link>
+              </m.div>
+            </m.div>
           </div>
 
           {/* Scroll Down Indicator */}
-          <motion.div
+          <m.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, y: [0, 10, 0] }}
             transition={{ delay: 2, duration: 2, repeat: Infinity }}
@@ -90,7 +115,7 @@ export default function Home() {
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
             </svg>
-          </motion.div>
+          </m.div>
         </section>
 
         {/* Stats Section */}
@@ -102,7 +127,7 @@ export default function Home() {
               { label: "Hours", value: "48" },
               { label: "Themes", value: "5" },
             ].map((stat, i) => (
-              <motion.div
+              <m.div
                 key={i}
                 initial={{ opacity: 0, scale: 0.9 }}
                 whileInView={{ opacity: 1, scale: 1 }}
@@ -112,7 +137,7 @@ export default function Home() {
               >
                 <div className="text-3xl md:text-5xl font-bold text-white mb-2">{stat.value}</div>
                 <div className="text-sm font-medium text-zinc-500 uppercase tracking-wider">{stat.label}</div>
-              </motion.div>
+              </m.div>
             ))}
           </div>
         </section>
@@ -120,7 +145,7 @@ export default function Home() {
         {/* About Section */}
         <section id="about" className="py-32 px-6 relative">
           <div className="max-w-4xl mx-auto">
-            <motion.div
+            <m.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -135,21 +160,21 @@ export default function Home() {
                 We provide the meals, the caffeine, and the swag. You bring the creativity.
                 Compete for cash prizes, connect with top tech companies, and build something that matters.
               </p>
-            </motion.div>
+            </m.div>
           </div>
         </section>
 
         {/* Tracks Section */}
         <section id="tracks" className="py-32 px-6 bg-zinc-900/30">
           <div className="max-w-7xl mx-auto">
-            <motion.h2
+            <m.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               className="text-3xl md:text-5xl font-bold mb-16 text-center"
             >
               Tracks & Themes
-            </motion.h2>
+            </m.h2>
             <div className="grid md:grid-cols-3 gap-6">
               {[
                 { title: "AI & ML", desc: "Push the boundaries of artificial intelligence. Build smart agents, generative models, or predictive systems." },
@@ -159,7 +184,7 @@ export default function Home() {
                 { title: "Gaming", desc: "Create immersive experiences. From indie games to VR worlds, let your imagination run wild." },
                 { title: "Open Innovation", desc: "No boundaries. If it's cool, hacky, and works, build it here." },
               ].map((track, i) => (
-                <motion.div
+                <m.div
                   key={i}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -170,25 +195,13 @@ export default function Home() {
                 >
                   <h3 className="text-xl font-bold mb-4 text-zinc-100 group-hover:text-purple-400 transition-colors">{track.title}</h3>
                   <p className="text-zinc-400 leading-relaxed">{track.desc}</p>
-                </motion.div>
+                </m.div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* Footer */}
-        <footer className="py-12 border-t border-white/10 bg-black text-center md:text-left">
-          <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="text-zinc-500 text-sm">
-              © 2026 Randomize Hackathon. All rights reserved.
-            </div>
-            <div className="flex gap-6">
-              <a href="#" className="text-zinc-500 hover:text-white transition-colors">Twitter</a>
-              <a href="#" className="text-zinc-500 hover:text-white transition-colors">Instagram</a>
-              <a href="#" className="text-zinc-500 hover:text-white transition-colors">Discord</a>
-            </div>
-          </div>
-        </footer>
+
       </main>
     </div>
   );
