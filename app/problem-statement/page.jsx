@@ -14,7 +14,14 @@ function ProblemCard({ title, domain, difficulty, description }) {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
-        <div className="group relative p-6 rounded-3xl bg-zinc-900/50 border border-white/5 hover:border-purple-500/30 transition-all hover:bg-zinc-800/50 flex flex-col h-fit">
+        <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            whileHover={{ y: -5, boxShadow: "0 10px 30px -10px rgba(168, 85, 247, 0.2)" }}
+            transition={{ duration: 0.4 }}
+            className="group relative p-6 rounded-3xl bg-zinc-900/50 border border-white/5 hover:border-purple-500/30 transition-colors hover:bg-zinc-800/50 flex flex-col h-fit"
+        >
             {/* Domain Tag & Difficulty */}
             <div className="mb-4 flex items-center justify-between">
                 <span
@@ -61,7 +68,7 @@ function ProblemCard({ title, domain, difficulty, description }) {
             >
                 {isOpen ? "Hide Details" : "View Details"}
             </button>
-        </div>
+        </motion.div>
     );
 }
 
