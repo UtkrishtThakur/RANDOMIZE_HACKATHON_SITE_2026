@@ -37,7 +37,10 @@ export default function Navbar() {
                         Leaderboard
                     </Link>
                     <Link href="/rules" className="hover:text-white transition-colors">
-                        RULES & FAQ
+                        Rules
+                    </Link>
+                    <Link href="/faqs" className="hover:text-white transition-colors">
+                        FAQs
                     </Link>
                 </div>
 
@@ -101,7 +104,14 @@ export default function Navbar() {
                                 className="text-lg font-medium text-zinc-300 hover:text-white transition-colors"
                                 onClick={() => setIsOpen(false)}
                             >
-                                RULES & FAQ
+                                Rules
+                            </Link>
+                            <Link
+                                href="/faqs"
+                                className="text-lg font-medium text-zinc-300 hover:text-white transition-colors"
+                                onClick={() => setIsOpen(false)}
+                            >
+                                FAQs
                             </Link>
 
                             {/* Mobile Timer Button (if hidden on very small screens, or just duplicated for ease) */}
