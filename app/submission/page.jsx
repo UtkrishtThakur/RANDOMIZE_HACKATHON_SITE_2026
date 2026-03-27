@@ -61,7 +61,7 @@ export default function SubmissionPage() {
                         variants={fadeInUp}
                         className="text-5xl md:text-7xl font-bold text-center bg-gradient-to-b from-white via-white to-zinc-500 bg-clip-text text-transparent mb-6 tracking-tight"
                     >
-                        Ready to Ship?
+                        ALL SET?
                     </m.h1>
 
                     <m.p
@@ -97,7 +97,7 @@ export default function SubmissionPage() {
 
                     {/* CTA Button */}
                     <m.div variants={fadeInUp} className="flex flex-col items-center gap-6">
-                        <Link href="#" target="_blank" className="relative group">
+                        <Link href="https://forms.gle/4YByXkL97j41t4Vd6" target="_blank" className="relative group">
                             <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-fuchsia-600 rounded-full blur opacity-40 group-hover:opacity-100 transition duration-1000 group-hover:duration-200" />
                             <button className="relative px-12 py-4 bg-white rounded-full leading-none flex items-center divide-x divide-slate-600">
                                 <span className="flex items-center space-x-5">

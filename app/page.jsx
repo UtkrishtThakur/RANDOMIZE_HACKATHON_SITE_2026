@@ -125,7 +125,7 @@ export default function Home() {
               { label: "Prizes", value: "₹27k" },
               { label: "Participants", value: "150+" },
               { label: "Hours", value: "24" },
-              { label: "Themes", value: "6+" },
+              { label: "Themes", value: "5" },
             ].map((stat, i) => (
               <m.div
                 key={i}
@@ -151,7 +151,7 @@ export default function Home() {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-3xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent inline-block">What is Randomize?</h2>
+              <h2 className="text-3xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent inline-block">What is "The Hackathon"?</h2>
               <p className="text-lg md:text-xl text-zinc-400 leading-relaxed mb-6 font-light">
                 Step into a world where ideas turn into reality and innovation knows no limits. This hackathon is your chance to build, break, and create alongside some of the brightest minds, all within an electrifying, time-bound challenge. Whether you’re coding, designing, or strategizing, it’s not just about participation—it’s about pushing boundaries, solving real problems, and proving what you’re capable of. Bring your passion, your creativity, and your competitive spirit, and get ready to turn bold ideas into impactful solutions. 🚀
               </p>
@@ -172,12 +172,11 @@ export default function Home() {
             </m.h2>
             <div className="grid md:grid-cols-3 gap-6">
               {[
-                { title: "AI & ML", desc: "Push the boundaries of artificial intelligence. Build smart agents, generative models, or predictive systems." },
-                { title: "Blockchain", desc: "Decentralize the future. Create dApps, smart contracts, or new financial primitives on the chain." },
-                { title: "Social Good", desc: "Code for a cause. Solve real-world problems affecting your community or the globe." },
-                { title: "Fintech", desc: "Revolutionize finance. Build the next generation of payments, banking, or trading tools." },
-                { title: "Gaming", desc: "Create immersive experiences. From indie games to VR worlds, let your imagination run wild." },
-                { title: "Open Innovation", desc: "No boundaries. If it's cool, hacky, and works, build it here." },
+                { title: "EdTech (Education Technology)", desc: "Build innovative solutions that transform how people learn—making education smarter, more accessible, and more engaging through technology." },
+                { title: "FinTech (Finance Technology)", desc: "Build smart solutions that revolutionize how people manage money—making finance faster, safer, and more accessible through innovation." },
+                { title: "Blockchain", desc: "Build decentralized solutions that bring transparency, security, and trust to digital systems—redefining how data and transactions are managed." },
+                { title: "Healthcare", desc: "Build innovative solutions that enhance patient care, improve accessibility, and leverage technology to create smarter, more efficient healthcare systems." },
+                { title: "Miscellaneous", desc: "Explore diverse problem statements that span multiple domains, offering flexibility to innovate beyond traditional boundaries." },
               ].map((track, i) => (
                 <m.div
                   key={i}
