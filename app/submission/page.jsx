@@ -74,9 +74,9 @@ export default function SubmissionPage() {
                     {/* Submission Checklist */}
                     <div className="grid md:grid-cols-3 gap-6 mb-16">
                         {[
-                            { title: "GitHub Repo", icon: "code", desc: "Public repository with a clear README." },
-                            { title: "Project PPT", icon: "slides", desc: "Brief presentation covering the problem & solution." },
-                            { title: "Demo Video", icon: "video", desc: "2-minute walkthrough of your project in action." }
+                            { title: "GitHub Repo", icon: "code", desc: "Public repository with a clear README. Required*" },
+                            { title: "Project PPT", icon: "slides", desc: "Brief presentation covering the problem & solution. Required*" },
+                            { title: "Demo Video", icon: "video", desc: "2-minute walkthrough of your project in action. (Optional)" }
                         ].map((item, i) => (
                             <m.div
                                 key={i}

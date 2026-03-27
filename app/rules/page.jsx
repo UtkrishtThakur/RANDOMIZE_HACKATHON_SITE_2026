@@ -21,28 +21,36 @@ const staggerContainer = {
 export default function RulesPage() {
     const rules = [
         {
-            title: "Eligibility",
-            description: "The hackathon is open to all university students. Teams must consist of 2-4 members. Inter-college teams are allowed."
+            title: "Team Formation",
+            description: "Each team must consist of the specified number of members (as registered by team leader). No changes in team members are allowed after the hackathon begins."
         },
         {
             title: "Original Work",
-            description: "All code, design, and assets must be created during the hackathon. Using open-source libraries is permitted, but plagiarism is strictly prohibited."
+            description: "All projects must be developed during the hackathon duration. Pre-built projects are not allowed, though participants can use open-source libraries and frameworks."
         },
         {
             title: "Code of Conduct",
-            description: "We are committed to providing a harassment-free experience for everyone. Be respectful, inclusive, and professional. Any form of harassment will lead to immediate disqualification."
+            description: "Participants must maintain respectful and professional behavior. Any form of misconduct, plagiarism, or unfair practices will lead to immediate disqualification."
         },
         {
             title: "Submission Guidelines",
-            description: "All projects must be submitted via the official submission portal before the deadline. A GitHub repository link and a demo video are required."
+            description: "All projects must be submitted via the official submission portal before the deadline. All submissions must be made before the deadline—late entries will not be accepted. A PPT and GitHub repository link are mandatorily required."
         },
         {
-            title: "Intellectual Property",
-            description: "You own what you build. The hackathon organizers claim no rights over your projects."
+            title: "Mentorship & Support",
+            description: "Mentors will be available during the event for guidance. However, external help outside the allowed resources is strictly prohibited."
         },
         {
-            title: "Judging Criteria",
-            description: "Projects will be judged based on innovation, technical complexity, impact, and presentation."
+            title: "Overnight Stay",
+            description: "Participants are allowed to stay overnight in the designated areas. Safety and security guidelines provided by the organizers must be followed at all times. No team is allowed to go back before the certian timings."
+        },
+        {
+            title: "Property Responsibility",
+            description: "Participants are responsible for any damage caused to college property, equipment, or venue facilities. Any intentional damage or misuse will result in strict action and possible disqualification."
+        },
+        {
+            title: "Personal Equipment",
+            description: "Participants must bring their own required hardware (laptops, chargers, etc.). The organizers are not responsible for loss, theft, or damage of personal belongings."
         }
     ];
 

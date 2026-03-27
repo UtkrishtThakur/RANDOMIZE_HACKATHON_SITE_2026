@@ -51,20 +51,20 @@ export default function FAQPage() {
 
     const questions = [
         {
-            question: "When and where is Randomize happening?",
-            answer: "Randomize is happening on [Date Placeholder], located at [Venue Placeholder]. Stay tuned for the exact coordinates!"
+            question: "Who can participate in the hackathon?",
+            answer: "We welcome students from all backgrounds! Whether you're a coder, designer, or just passionate about tech, there's a place for you. Participants must complete the registration process to take part."
         },
         {
-            question: "Who can participate?",
-            answer: "We welcome students from all backgrounds! Whether you're a coder, designer, or just passionate about tech, there's a place for you. You must be currently enrolled in an educational institution."
+            question: "Can we start working on our project before the hackathon begins??",
+            answer: "No, all projects must be developed during the official 24-hour hackathon period."
         },
         {
-            question: "Is there a registration fee?",
-            answer: "Nope! Randomize is completely free to attend. We'll provide meals, snacks, and swag for all accepted hackers."
+            question: "Will food and refreshments be provided?",
+            answer: "Food and refreshments will be available on a paid basis. Participants can order from the designated outlets, and the menu will be shared prior to or during the event."
         },
         {
-            question: "What is the team size?",
-            answer: "You can hack solo or in teams of up to 4 people. Don't worry if you don't have a team yet – we'll have team-building activities at the start of the event."
+            question: "Is it mandatory to stay overnight?",
+            answer: "Yes, since this is a 24-hour hackathon, participants are expected to stay at the venue for atleast a certian time to be informed."
         },
         {
             question: "Do I need to know how to code?",
@@ -75,8 +75,24 @@ export default function FAQPage() {
             answer: "Bring your laptop, charger, toiletries, and a sleeping bag if you plan to crash at the venue. Don't forget your student ID!"
         },
         {
-            question: "Will travel expenses be reimbursed?",
-            answer: "We have a limited travel reimbursement fund. Decisions will be made on a case-by-case basis after acceptance."
+            question: "Can we use open-source libraries or APIs?",
+            answer: "Yes, participants are allowed to use open-source tools and APIs, but proper credit must be given."
+        },
+        {
+            question: "How will the projects be judged?",
+            answer: "Projects will be evaluated based on innovation, technical complexity, design, impact, and presentation."
+        },
+        {
+            question: "Will mentors be available during the event?",
+            answer: "Yes, mentors will be available to guide participants throughout the hackathon."
+        },
+        {
+            question: "What if there is a technical issue during submission?",
+            answer: "Participants should immediately contact the organizing team. Assistance will be provided if the issue is valid."
+        },
+        {
+            question: "What if someone breaks the rules?",
+            answer: "Any violation of rules may lead to penalties or immediate disqualification, depending on the severity."
         }
     ];
 
@@ -126,8 +142,7 @@ export default function FAQPage() {
                         className="mt-12 text-center"
                     >
                         <p className="text-zinc-500 italic">
-                            More questions will be added as the event approaches. <br />
-                            For urgent inquiries, email us at <a href="mailto:contact@randomize.com" className="text-purple-400 hover:underline">contact@randomize.com</a>
+                            For urgent inquiries, contact your nearest voluteer/organiser.
                         </p>
                     </m.div>
 

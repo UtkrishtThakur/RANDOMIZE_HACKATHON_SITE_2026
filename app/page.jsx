@@ -82,12 +82,12 @@ export default function Home() {
 
 
               <m.h1 variants={fadeInUp} className="text-6xl md:text-9xl font-bold tracking-tighter mb-6 bg-gradient-to-b from-white via-white to-zinc-500 bg-clip-text text-transparent pb-2 relative z-10 drop-shadow-[0_20px_50px_rgba(168,85,247,0.5)]">
-                BUILD THE <br /> IMPOSSIBLE.
+                THE <br /> HACKATHON
               </m.h1>
 
               <m.p variants={fadeInUp} className="max-w-2xl mx-auto text-lg md:text-xl text-zinc-400 mb-10 leading-relaxed">
-                Join 500+ developers, designers, and innovators for 48 hours of pure creation.
-                The ultimate hackathon experience coming to your city.
+                Joined by 150+ coders, designers, and innovators for 24 hours of pure creation.
+                The ultimate hackathon experience coming to your campus.
               </m.p>
 
               <m.div variants={fadeInUp} className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -122,10 +122,10 @@ export default function Home() {
         <section className="border-y border-white/5 bg-white/[0.02] backdrop-blur-sm">
           <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { label: "Prizes", value: "$50k+" },
-              { label: "Hackers", value: "500+" },
-              { label: "Hours", value: "48" },
-              { label: "Themes", value: "5" },
+              { label: "Prizes", value: "₹27k" },
+              { label: "Participants", value: "150+" },
+              { label: "Hours", value: "24" },
+              { label: "Themes", value: "6+" },
             ].map((stat, i) => (
               <m.div
                 key={i}
@@ -153,12 +153,7 @@ export default function Home() {
             >
               <h2 className="text-3xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent inline-block">What is Randomize?</h2>
               <p className="text-lg md:text-xl text-zinc-400 leading-relaxed mb-6 font-light">
-                Randomize is not just another hackathon. It's a gathering of minds, a collision of ideas, and a celebration of code.
-                Whether you're a seasoned pro or writing your first line of code, we have a place for you.
-              </p>
-              <p className="text-lg md:text-xl text-zinc-400 leading-relaxed font-light">
-                We provide the meals, the caffeine, and the swag. You bring the creativity.
-                Compete for cash prizes, connect with top tech companies, and build something that matters.
+                Step into a world where ideas turn into reality and innovation knows no limits. This hackathon is your chance to build, break, and create alongside some of the brightest minds, all within an electrifying, time-bound challenge. Whether you’re coding, designing, or strategizing, it’s not just about participation—it’s about pushing boundaries, solving real problems, and proving what you’re capable of. Bring your passion, your creativity, and your competitive spirit, and get ready to turn bold ideas into impactful solutions. 🚀
               </p>
             </m.div>
           </div>
