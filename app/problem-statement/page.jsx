@@ -105,7 +105,14 @@ export default function ProblemStatements() {
                             <br />
                             Select a problem statement below to get started.
                             <br />
-                             (Don't forget to enter your opted problem statement in google form)
+                            <a
+                                href="https://forms.gle/bgsuCFGNvh2h1yCc6"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-block mt-4 px-6 py-2 rounded-full bg-purple-600 hover:bg-purple-700 text-white font-semibold transition-all hover:scale-105 active:scale-95"
+                            >
+                                Submit your choice of problem statements
+                            </a>
                         </p>
                     </div>
 
@@ -113,260 +120,260 @@ export default function ProblemStatements() {
 
 
                     {/* Problem Statements Grid */}
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-    {/* PROBLEM 1 */}
-    <ProblemCard
-        title="PS 1: GhostWriter Detector - AI vs Student Authorship Engine"
-        domain="EDTECH"
-        description="Background: With widespread use of LLMs, educators struggle to determine whether submissions
+                        {/* PROBLEM 1 */}
+                        <ProblemCard
+                            title="PS 1: GhostWriter Detector - AI vs Student Authorship Engine"
+                            domain="EDTECH"
+                            description="Background: With widespread use of LLMs, educators struggle to determine whether submissions
                 reflect genuine student understanding or AI-generated content.
                 Challenge: Design a system that analyzes writing style evolution, keystroke
                 dynamics, and contextual reasoning patterns to estimate authorship authenticity."
-    />
+                        />
 
-    {/* PROBLEM 2 */}
-    <ProblemCard
-        title="PS 2: Dropout Radar - Early Risk Detection System"
-        domain="EDTECH"
-        description="Background: Universities often identify struggling students too late, leading to
+                        {/* PROBLEM 2 */}
+                        <ProblemCard
+                            title="PS 2: Dropout Radar - Early Risk Detection System"
+                            domain="EDTECH"
+                            description="Background: Universities often identify struggling students too late, leading to
                 high dropout rates.
                 Challenge: Build a predictive system that flags at-risk students using behavioral,
                 academic, and
                 engagement signals before failure occurs."
-    />
+                        />
 
-    {/* PROBLEM 3 */}
-    <ProblemCard
-        title="PS 3: ExplainLikeAI - Concept Simplifier for Any Level"
-        domain="EDTECH"
-        description="Background: Students often fail not due to lack of content but due to poor
+                        {/* PROBLEM 3 */}
+                        <ProblemCard
+                            title="PS 3: ExplainLikeAI - Concept Simplifier for Any Level"
+                            domain="EDTECH"
+                            description="Background: Students often fail not due to lack of content but due to poor
                 explanations tailored to
                 their level.
                 Challenge: Create an AI system that dynamically explains the same concept at
                 multiple levels
                 (child, beginner, expert) with adaptive analogies."
-    />
+                        />
 
-    {/* PROBLEM 4 */}
-    <ProblemCard
-        title="PS 4: ShadowIntern - Virtual Industry Simulation Engine"
-        domain="EDTECH"
-        description="Background: Students lack real-world exposure before entering jobs.
+                        {/* PROBLEM 4 */}
+                        <ProblemCard
+                            title="PS 4: ShadowIntern - Virtual Industry Simulation Engine"
+                            domain="EDTECH"
+                            description="Background: Students lack real-world exposure before entering jobs.
 Challenge: Develop a simulation platform that mimics real company workflows
 (tickets, standups,
 deadlines) to train students in realistic environments."
-    />
+                        />
 
-    {/* PROBLEM 5 */}
-    <ProblemCard
-        title="PS 5: BiasLens Edu - Curriculum Bias Analyzer"
-        domain="EDTECH"
-        description="Background: Educational content often contains hidden cultural or ideological
+                        {/* PROBLEM 5 */}
+                        <ProblemCard
+                            title="PS 5: BiasLens Edu - Curriculum Bias Analyzer"
+                            domain="EDTECH"
+                            description="Background: Educational content often contains hidden cultural or ideological
 bias.
 Challenge: Build a system that audits textbooks and lectures to detect bias,
 missing perspectives,
 or skewed narratives."
-    />
+                        />
 
-    <br />
+                        <br />
 
-    {/* PROBLEM 6 */}
-    <ProblemCard
-        title="PS 1: ScamSense - Real-Time Scam Call & Message Shield"
-        domain="Fintech"
-        description="Background: Digital fraud is shifting to social engineering via calls, WhatsApp,
+                        {/* PROBLEM 6 */}
+                        <ProblemCard
+                            title="PS 1: ScamSense - Real-Time Scam Call & Message Shield"
+                            domain="Fintech"
+                            description="Background: Digital fraud is shifting to social engineering via calls, WhatsApp,
 and SMS.
 Challenge: Develop a system that analyzes conversations in real time to detect
 scams and warn users before financial loss."
-    />
+                        />
 
-    {/* PROBLEM 7 */}
-    <ProblemCard
-        title="PS 2:  ShadowCredit - Behavioral Credit Engine for Gig Workers"
-        domain="Fintech"
-        description="Background: Gig workers lack stable income proof, making them invisible to
+                        {/* PROBLEM 7 */}
+                        <ProblemCard
+                            title="PS 2:  ShadowCredit - Behavioral Credit Engine for Gig Workers"
+                            domain="Fintech"
+                            description="Background: Gig workers lack stable income proof, making them invisible to
 traditional credit systems.
 Challenge: Create a dynamic credit scoring system using earning patterns,
 platform ratings, and work consistency."
-    />
+                        />
 
-    {/* PROBLEM 8 */}
-    <ProblemCard
-        title="PS 3: ImpulseGuard - Behavioral Spending Intervention AI"
-        domain="Fintech"
-        description="Background: Users overspend due to impulsive decisions rather than lack of
+                        {/* PROBLEM 8 */}
+                        <ProblemCard
+                            title="PS 3: ImpulseGuard - Behavioral Spending Intervention AI"
+                            domain="Fintech"
+                            description="Background: Users overspend due to impulsive decisions rather than lack of
 awareness.
 Challenge: Design an AI that detects impulsive buying patterns and intervenes in
 real time with personalized nudges."
-    />
+                        />
 
-    {/* PROBLEM 9 */}
-    <ProblemCard
-        title="PS 4: FinTwin - Personal Financial Digital Twin"
-        domain="Fintech"
-        description="Background: People lack a simulation environment to test financial decisions
+                        {/* PROBLEM 9 */}
+                        <ProblemCard
+                            title="PS 4: FinTwin - Personal Financial Digital Twin"
+                            domain="Fintech"
+                            description="Background: People lack a simulation environment to test financial decisions
 safely.
 Challenge: Build a digital twin that simulates future financial outcomes based on
 user decisions like loans, investments, or spending."
-    />
+                        />
 
-    {/* PROBLEM 10 */}
-    <ProblemCard
-        title="PS 5: DarkPattern Detector for Fintech Apps"
-        domain="Fintech"
-        description="Background: Many financial apps use UX dark patterns to manipulate user
+                        {/* PROBLEM 10 */}
+                        <ProblemCard
+                            title="PS 5: DarkPattern Detector for Fintech Apps"
+                            domain="Fintech"
+                            description="Background: Many financial apps use UX dark patterns to manipulate user
 decisions.
 Challenge: Create a system that detects manipulative UI/UX patterns in fintech
 apps and flags them."
-    />
+                        />
 
-<br />
+                        <br />
 
-    {/* PROBLEM 11 */}
-    <ProblemCard
-        title="PS 1: ProofOfImpact - Verifiable Social Impact Protocol"
-        domain="Blockchain"
-        description="Background: NGOs struggle to prove actual impact of funds received. Challenge:
+                        {/* PROBLEM 11 */}
+                        <ProblemCard
+                            title="PS 1: ProofOfImpact - Verifiable Social Impact Protocol"
+                            domain="Blockchain"
+                            description="Background: NGOs struggle to prove actual impact of funds received. Challenge:
 Design a blockchain system that ties fund disbursement to verifiable real-world
 outcomes using oracles and proofs."
-    />
+                        />
 
-    {/* PROBLEM 12 */}
-    <ProblemCard
-        title="PS 2: DataDAO - Personal Data Monetization Marketplace"
-        domain="Blockchain"
-        description="Background: Users generate valuable data but don’t benefit from it.
+                        {/* PROBLEM 12 */}
+                        <ProblemCard
+                            title="PS 2: DataDAO - Personal Data Monetization Marketplace"
+                            domain="Blockchain"
+                            description="Background: Users generate valuable data but don’t benefit from it.
 Challenge: Build a decentralized marketplace where users can sell anonymized
 data with full ownership and control."
-    />
+                        />
 
-    {/* PROBLEM 13 */}
-    <ProblemCard
-        title="PS 3: DeadMan Switch Wallet System"
-        domain="Blockchain"
-        description="Background: Crypto assets are often lost due to lack of inheritance mechanisms.
+                        {/* PROBLEM 13 */}
+                        <ProblemCard
+                            title="PS 3: DeadMan Switch Wallet System"
+                            domain="Blockchain"
+                            description="Background: Crypto assets are often lost due to lack of inheritance mechanisms.
 Challenge: Create a smart contract system that securely transfers assets to
 beneficiaries upon inactivity or verified events."
-    />
+                        />
 
-    {/* PROBLEM 14 */}
-    <ProblemCard
-        title="PS 4: AntiRug - Smart Contract Risk Analyzer"
-        domain="Blockchain"
-        description="Background: Users fall victim to rug pulls due to lack of contract transparency.
+                        {/* PROBLEM 14 */}
+                        <ProblemCard
+                            title="PS 4: AntiRug - Smart Contract Risk Analyzer"
+                            domain="Blockchain"
+                            description="Background: Users fall victim to rug pulls due to lack of contract transparency.
 Challenge: Develop a tool that analyzes smart contracts and flags potential
 malicious behaviors before interaction."
-    />
+                        />
 
-    {/* PROBLEM 15 */}
-    <ProblemCard
-        title="PS 5: ReputationChain - Cross-Platform Trust Score"
-        domain="Blockchain"
-        description="Background: Reputation is fragmented across platforms (GitHub, LinkedIn, etc.).
+                        {/* PROBLEM 15 */}
+                        <ProblemCard
+                            title="PS 5: ReputationChain - Cross-Platform Trust Score"
+                            domain="Blockchain"
+                            description="Background: Reputation is fragmented across platforms (GitHub, LinkedIn, etc.).
 Challenge: Build a decentralized reputation layer aggregating verifiable
 achievements across ecosystems."
-    />
+                        />
 
-    <br />
+                        <br />
 
-    {/* PROBLEM 16 */}
-    <ProblemCard
-        title="PS 1: Symptom Drift Tracker - Long-Term Disease Evolution AI"
-        domain="Healthcare"
-        description="Background: Chronic diseases evolve slowly and patterns are often missed.
+                        {/* PROBLEM 16 */}
+                        <ProblemCard
+                            title="PS 1: Symptom Drift Tracker - Long-Term Disease Evolution AI"
+                            domain="Healthcare"
+                            description="Background: Chronic diseases evolve slowly and patterns are often missed.
 Challenge: Build a system that tracks symptom evolution over time and
 detects subtle health deterioration trends."
-    />
+                        />
 
-    {/* PROBLEM 17 */}
-    <ProblemCard
-        title="PS 2: ICU Load Balancer - Emergency Resource Routing System"
-        domain="Healthcare"
-        description="Background: Hospitals face uneven ICU loads leading to preventable deaths.
+                        {/* PROBLEM 17 */}
+                        <ProblemCard
+                            title="PS 2: ICU Load Balancer - Emergency Resource Routing System"
+                            domain="Healthcare"
+                            description="Background: Hospitals face uneven ICU loads leading to preventable deaths.
 Challenge: Design a real-time system that redistributes patients across
 hospitals based on capacity and urgency."
-    />
+                        />
 
-  {/* PROBLEM 18 */}
-    <ProblemCard
-        title="PS 3: MedExplain - Report-to-Human Translator"
-        domain="Healthcare"
-        description="Background: Patients struggle to understand medical reports and jargon.
+                        {/* PROBLEM 18 */}
+                        <ProblemCard
+                            title="PS 3: MedExplain - Report-to-Human Translator"
+                            domain="Healthcare"
+                            description="Background: Patients struggle to understand medical reports and jargon.
 Challenge: Create an AI that converts complex reports into simple, actionable
 explanations."
-    />
+                        />
 
-  {/* PROBLEM 19 */}
-    <ProblemCard
-        title="PS 4: Drug Conflict Detector - Prescription Safety AI"
-        domain="Healthcare"
-        description="Background: Patients taking multiple medications risk dangerous drug
+                        {/* PROBLEM 19 */}
+                        <ProblemCard
+                            title="PS 4: Drug Conflict Detector - Prescription Safety AI"
+                            domain="Healthcare"
+                            description="Background: Patients taking multiple medications risk dangerous drug
 interactions.
 Challenge: Build a system that detects harmful drug combinations in real time."
-    />
+                        />
 
-    {/* PROBLEM 20 */}
-    <ProblemCard
-        title="PS 5: Burnout Monitor for Healthcare Workers"
-        domain="Healthcare"
-        description="Background: Healthcare professionals face high burnout rates impacting care
+                        {/* PROBLEM 20 */}
+                        <ProblemCard
+                            title="PS 5: Burnout Monitor for Healthcare Workers"
+                            domain="Healthcare"
+                            description="Background: Healthcare professionals face high burnout rates impacting care
 quality.
 Challenge: Develop a system that detects burnout signals using schedules,
 workload, and behavioral patterns."
-    />
+                        />
 
-<br />
+                        <br />
 
-    {/* PROBLEM 21 */}
-    <ProblemCard
-        title="PS 1: DeepTrust - Deepfake Real-Time Video Authenticator"
-        domain="Miscellaneous"
-        description="Background: Deepfake videos are becoming indistinguishable from real ones.
+                        {/* PROBLEM 21 */}
+                        <ProblemCard
+                            title="PS 1: DeepTrust - Deepfake Real-Time Video Authenticator"
+                            domain="Miscellaneous"
+                            description="Background: Deepfake videos are becoming indistinguishable from real ones.
 Challenge: Build a system that verifies video authenticity in real time during
 streaming or calls."
-    />
+                        />
 
-    {/* PROBLEM 22 */}
-    <ProblemCard
-        title="PS 2: CrowdSignal - Real-Time Public Sentiment Heatmap"
-        domain="Miscellaneous"
-        description="Background: Authorities lack real-time understanding of public mood during
+                        {/* PROBLEM 22 */}
+                        <ProblemCard
+                            title="PS 2: CrowdSignal - Real-Time Public Sentiment Heatmap"
+                            domain="Miscellaneous"
+                            description="Background: Authorities lack real-time understanding of public mood during
 events.
 Challenge: Design a system that aggregates social signals to visualize crowd
 sentiment geographically."
-    />
+                        />
 
-    {/* PROBLEM 23 */}
-    <ProblemCard
-        title="PS 3: AI Debate Judge - Argument Quality Evaluator"
-        domain="Miscellaneous"
-        description="Background: Debates are often judged subjectively.
+                        {/* PROBLEM 23 */}
+                        <ProblemCard
+                            title="PS 3: AI Debate Judge - Argument Quality Evaluator"
+                            domain="Miscellaneous"
+                            description="Background: Debates are often judged subjectively.
 Challenge: Create a system that evaluates arguments based on logic, evidence,
 and coherence."
-    />
+                        />
 
-    {/* PROBLEM 24 */}
-    <ProblemCard
-        title="PS 4: NoiseMap - Urban Sound Pollution Intelligence System"
-        domain="Miscellaneous"
-        description="Background: Noise pollution is under-monitored despite major health impacts.
+                        {/* PROBLEM 24 */}
+                        <ProblemCard
+                            title="PS 4: NoiseMap - Urban Sound Pollution Intelligence System"
+                            domain="Miscellaneous"
+                            description="Background: Noise pollution is under-monitored despite major health impacts.
 Challenge: Build a system that maps and predicts noise pollution hotspots in
 cities."
-    />
+                        />
 
-    {/* PROBLEM 25 */}
-    <ProblemCard
-        title="PS 5: MemoryVault - Personal Digital Memory Organizer"
-        domain="Miscellaneous"
-        description="Background: People generate massive digital memories but struggle to organize
+                        {/* PROBLEM 25 */}
+                        <ProblemCard
+                            title="PS 5: MemoryVault - Personal Digital Memory Organizer"
+                            domain="Miscellaneous"
+                            description="Background: People generate massive digital memories but struggle to organize
 or retrieve them.
 Challenge: Develop an AI system that organizes, summarizes, and retrieves
 personal memories contextually."
-    />
+                        />
 
 
-</div>
+                    </div>
                 </main>
             </div>
         </div>

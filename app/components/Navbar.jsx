@@ -115,9 +115,7 @@ export default function Navbar() {
                             </Link>
 
                             {/* Mobile Timer Button (if hidden on very small screens, or just duplicated for ease) */}
-                            <button className="sm:hidden w-full py-3 rounded-full bg-white text-black text-sm font-semibold hover:bg-zinc-200 transition-colors">
-                                Timer placeholder
-                            </button>
+
                         </div>
                     </m.div>
                 )}
